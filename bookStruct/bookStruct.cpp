@@ -107,7 +107,7 @@ void UpdateBookID(Book**& books, int& quantity, int& oldBookID, int& newBookID) 
 	books[oldBookID - 1]->bookID = newBookID;
 }
 void UpdateBookPrice(Book**& books, int& quantity, int& bookID, float& price) {
-	books[bookID]->price = price;
+	books[bookID - 1]->price = price;
 }
 
 void DeleteBook(Book** books, int& quantity, int& bookID) {
