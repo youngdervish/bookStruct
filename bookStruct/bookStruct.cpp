@@ -60,7 +60,6 @@ bool FindBook(Book**& books, int& quantity, int& bookID) {
 }
 
 void AddBook(Book**& books, int& quantity, char* title, char* author, int& pageCount, int& bookID, float& price) {
-	cout << title << endl;
 	Book* newBook = new Book{ title, author, pageCount, bookID, price };
 	books[quantity] = newBook;
 	quantity++;
